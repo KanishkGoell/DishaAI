@@ -1,6 +1,10 @@
+// frontend/src/services/api.js
+
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000/api';
+// Use the VITE_API_URL env var if set, otherwise default to your Railway API:
+const API_URL = import.meta.env.VITE_API_URL ||
+  'https://dishaai-production.up.railway.app/api';
 
 export const fetchTasks = async () => {
   try {
