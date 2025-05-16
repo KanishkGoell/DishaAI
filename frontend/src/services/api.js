@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // Use the VITE_API_URL env var if set, otherwise default to your Railway API:
 const API_URL = import.meta.env.VITE_API_URL ||
-  'https://dishaai-production.up.railway.app/api';
+  'https://dishaai-yrci.onrender.com/api';
 
 export const fetchTasks = async () => {
   try {
